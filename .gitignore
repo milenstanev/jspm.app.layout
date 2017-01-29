@@ -4,3 +4,6 @@
 /.idea/
 /npm-debug.log
 /esdoc/
+/src/components/smart/
+!/src/components/default/
+/src/components/default/
