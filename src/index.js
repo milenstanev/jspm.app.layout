@@ -1,29 +1,32 @@
-import angular from 'angular/bower-angular'
-import 'angular-ui/ui-router';
+import {
+  angular, router
+} from './libs/dependecies.js';
 
-import ComponentCtrl from './Controller.js';
+const component = angular.module('app', []);
 
-/**
- * @desc Description of main module
- * @type{angular.Module}
- */
-const component = angular.module('componentName', [
-  'ui.router'
-]);
+component.config(router(component, [
+  {
+    "stateName": "layout",
+    "urlPrefix": "/layout/default",
+    "type": "load",
+    "src": "./src/components/default/index.js"
+  },
+  {
+    "stateName": "layout.app",
+    "urlPrefix": "/layout-smart",
+    "type": "load",
+    "src": "./src/components/smart/index.js"
+  }
+]));
 
-component.config(($stateProvider, $urlRouterProvider) => {
-  $stateProvider
-    .state('home', {
-      url: '/home',
-      template: '<home></home>'
-    });
+component.config(function($locationProvider, $httpProvider, $urlRouterProvider) {
+  $locationProvider.html5Mode({
+    enabled: false,
+    requireBase: false
+  });
 
-  return $urlRouterProvider.otherwise('/home')
-});
-
-component.component('home', {
-  template: '<h1>Home</h1><p>Hello, {{ $ctrl.user.name }} !</p>',
-  controller: ComponentCtrl
+  $httpProvider.useApplyAsync(true);
+  return $urlRouterProvider.otherwise('/layout-smart');
 });
 
 export default component;

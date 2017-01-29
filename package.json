@@ -19,8 +19,15 @@
   },
   "jspm": {
     "dependencies": {
+      "angular": "angular/bower-angular@^1.6.1",
       "angular-ui/ui-router": "^0.4.2",
-      "angular/bower-angular": "^1.6.1"
+      "christopherthielen/ui-router-extras": "^0.1.3",
+      "css": "systemjs/plugin-css@^0.1.32",
+      "distros/bootstrap-less": "^3.3.9",
+      "json": "systemjs/plugin-json@^0.2.3",
+      "less": "systemjs/plugin-less@^0.1.2",
+      "ocombe/ocLazyLoad": "^1.0.9",
+      "text": "systemjs/plugin-text@^0.0.9"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
@@ -29,6 +36,7 @@
     }
   },
   "devDependencies": {
+    "less": "^2.7.2",
     "systemjs-builder": "^0.16.0"
   }
 }

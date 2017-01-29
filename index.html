@@ -6,19 +6,13 @@
 </head>
 <body ng-cloak>
 
-<div ui-view></div>
-<hr>
-<home></home>
+<div ui-view="layout"></div>
 
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
 
 <script>
   System.import('./src/index.js').then(function (reference) {
-    angular.module('examlpe.core', [
-      reference.default.name
-    ]);
-
     angular.bootstrap(document.body, [
       reference.default.name
     ]);

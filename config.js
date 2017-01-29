@@ -1,5 +1,4 @@
 System.config({
-  baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
@@ -14,11 +13,21 @@ System.config({
   },
 
   map: {
+    "angular": "github:angular/bower-angular@1.6.1",
     "angular-ui/ui-router": "github:angular-ui/ui-router@0.4.2",
-    "angular/bower-angular": "github:angular/bower-angular@1.6.1",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "christopherthielen/ui-router-extras": "github:christopherthielen/ui-router-extras@0.1.3",
     "core-js": "npm:core-js@1.2.7",
+    "css": "github:systemjs/plugin-css@0.1.32",
+    "distros/bootstrap-less": "github:distros/bootstrap-less@3.3.9",
+    "json": "github:systemjs/plugin-json@0.2.3",
+    "less": "github:systemjs/plugin-less@0.1.2",
+    "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@1.0.9",
+    "text": "github:systemjs/plugin-text@0.0.9",
+    "github:distros/bootstrap-less@3.3.9": {
+      "jquery": "github:components/jquery@3.1.1"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -36,6 +45,9 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:systemjs/plugin-less@0.1.2": {
+      "css": "github:systemjs/plugin-css@0.1.30"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
