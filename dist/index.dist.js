@@ -24,6 +24,9 @@ $__System.register('b', [], function (_export) {
 						System['import'](futureState.src).then(function (loaded) {
 							var newModule = loaded;
 							if (!loaded.name) {
+								/**
+         * @desc They are an issue in original file, missing {window} and Object can't be acessed in component closure!
+         */
 								var key = window.Object.keys(loaded);
 								newModule = loaded[key[0]];
 							}
@@ -95,7 +98,7 @@ $__System.register('12', ['c'], function (_export) {
         "stateName": "layout",
         "urlPrefix": "/",
         "type": "load",
-        "src": "milenstanev/jspm.app.layout.smart"
+        "src": "github:milenstanev/jspm.app.layout.smart@master"
       }]));
 
       component.config(function ($locationProvider, $httpProvider, $urlRouterProvider) {

@@ -18,7 +18,7 @@ component.config(router(component, [
       "stateName": "layout",
       "urlPrefix": "/",
       "type": "load",
-      "src": "milenstanev/jspm.app.layout.smart"
+      "src": "github:milenstanev/jspm.app.layout.smart@master"
     }
 ]));
 
