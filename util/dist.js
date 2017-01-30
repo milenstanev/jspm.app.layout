@@ -1,5 +1,19 @@
+"use strict";
 const fs = require('fs');
 const Builder = require('systemjs-builder');
+
+const pjson = require('../package.json');
+
+let builderConfigMeta = {
+  // TODO: Finish it!
+  'christopherthielen/ui-router-extras/release/modular/ct-ui-router-extras.core': { build: false },
+  'christopherthielen/ui-router-extras/release/modular/ct-ui-router-extras.future': { build: false }
+};
+for(let key in pjson.jspm.dependencies) {
+  builderConfigMeta[key] = {
+    build: false
+  };
+}
 
 /**
  * Define baseUrl
@@ -7,31 +21,24 @@ const Builder = require('systemjs-builder');
  * .. -> debug, run as node file
  * @type {string}
  */
-const baseUrl = '..';
+const baseUrl = '.';
 /**
  * Configure builder paths
  */
 const builder = new Builder(`${baseUrl}/`, `${baseUrl}/config.js`);
 
 builder.config({
-  meta: {
-    'angular': {
-      build: false
-    },
-    'angular-ui/ui-router': {
-      build: false
-    }
-  }
+  meta: builderConfigMeta
 });
 
 
 builder
   .buildStatic(
-    `${baseUrl}/src/index.js`,
+    `${baseUrl}/index.js`,
     `${baseUrl}/dist/index.dist.js`,
     {
       inject: true,
-      minify: true,
+      minify: false,
       mangle: false,
       sourceMaps: true,
       format: 'umd',
@@ -43,4 +50,4 @@ builder
   .catch(function(err) {
     console.log('Build error\n');
     console.log(err);
-});
+  });

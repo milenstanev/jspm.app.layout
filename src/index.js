@@ -2,31 +2,34 @@ import {
   angular, router
 } from './libs/dependecies.js';
 
-const component = angular.module('app', []);
+//import asd from 'milenstanev/jspm.app.layout.smart';
+const component = angular.module('app', [
+  //asd.name
+]);
 
 component.config(router(component, [
-  {
+  /*{
     "stateName": "layout",
     "urlPrefix": "/layout/default",
     "type": "load",
     "src": "./src/components/default/index.js"
-  },
-  {
-    "stateName": "layout.app",
-    "urlPrefix": "/layout-smart",
-    "type": "load",
-    "src": "./src/components/smart/index.js"
-  }
+  },*/
+    {
+      "stateName": "layout",
+      "urlPrefix": "/",
+      "type": "load",
+      "src": "milenstanev/jspm.app.layout.smart"
+    }
 ]));
 
-component.config(function($locationProvider, $httpProvider, $urlRouterProvider) {
+component.config(($locationProvider, $httpProvider, $urlRouterProvider) => {
   $locationProvider.html5Mode({
     enabled: false,
     requireBase: false
   });
 
   $httpProvider.useApplyAsync(true);
-  return $urlRouterProvider.otherwise('/layout-smart');
+  return $urlRouterProvider.otherwise('/layout');
 });
 
 export default component;

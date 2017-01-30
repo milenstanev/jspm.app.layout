@@ -16,7 +16,10 @@ export default function(angularModule, futureRoutes) {
 					System.import(futureState.src).then(loaded => {
 						var newModule = loaded;
 						if (!loaded.name) {
-							var key = Object.keys(loaded);
+							/**
+							 * @desc They are an issue in original file, missing {window} and Object can't be acessed in component closure!
+							 */
+							var key = window.Object.keys(loaded);
 							newModule = loaded[key[0]];
 						}
 
