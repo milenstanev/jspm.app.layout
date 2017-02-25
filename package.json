@@ -26,7 +26,6 @@
       "distros/bootstrap-less": "^3.3.9",
       "json": "systemjs/plugin-json@^0.2.3",
       "less": "systemjs/plugin-less@^0.1.2",
-      "milenstanev/jspm.app.layout.smart": "master",
       "ocombe/ocLazyLoad": "^1.0.9",
       "text": "systemjs/plugin-text@^0.0.9"
     },
