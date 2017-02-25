@@ -64,13 +64,13 @@ component.config(router(component, [
     'stateName': 'layoutSmart',
     'urlPrefix': '/',
     'type': 'load',
-    'src': 'milenstanev/jspm.app.layout.smart'
+    'src': 'milenstanev-jspm.app.layout.smart'
   },
   {
     'stateName': 'layoutSmart.other',
     'urlPrefix': '/',
     'type': 'load',
-    'src': 'milenstanev/jspm.app.layout.smart'
+    'src': 'milenstanev-jspm.app.layout.smart'
   }
 ]));
 

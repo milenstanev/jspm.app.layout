@@ -23,7 +23,7 @@ System.config({
     "distros/bootstrap-less": "github:distros/bootstrap-less@3.3.9",
     "json": "github:systemjs/plugin-json@0.2.3",
     "less": "github:systemjs/plugin-less@0.1.2",
-    "milenstanev/jspm.app.layout.smart": "github:milenstanev/jspm.app.layout.smart@master",
+    "milenstanev-jspm.app.layout.smart": "github:milenstanev-jspm.app.layout.smart@0.0.2",
     "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@1.1.0",
     "text": "github:systemjs/plugin-text@0.0.9",
     "github:distros/bootstrap-less@3.3.9": {
@@ -47,7 +47,8 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "github:milenstanev/jspm.app.layout.smart@master": {
+    "github:milenstanev-jspm.app.layout.smart@0.0.2": {
+      "FortAwesome/Font-Awesome": "github:FortAwesome/Font-Awesome@4.7.0",
       "angular": "github:angular/bower-angular@1.6.2",
       "angular-ui/ui-router": "github:angular-ui/ui-router@0.4.2",
       "christopherthielen/ui-router-extras": "github:christopherthielen/ui-router-extras@0.1.3",
