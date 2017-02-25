@@ -15,29 +15,27 @@ class Asd {
 Asd.$inject = ['$state'];
 
 component.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterProvider) => {
-
-  // TODO
   /*$stateProvider
     .state('layout', {
       abstract: true,
       views: {
         layout: {
-          template: layoutHtml
+          template: 'Template'
         }
       }
     });*/
 
   $stateProvider
-    .state(`layout.smart`, {
-      url: '/layout-smart',
+    .state(`layout.home`, {
+      url: '/home',
       views: {
-        "content": {
-          template: "asd"
+        'content': {
+          template: 'asd'
         },
-        "navigation": {
-          template: "<a ui-sref='layout.smart'>Link</a><a ui-sref='layout.other'>Link</a>"
+        'navigation': {
+          template: `<a ui-sref='layout.home'>Link</a><a ui-sref='layout.other'>Link</a>`
         },
-        "footer": {
+        'footer': {
           template: ' | Footer Template'
         }
       }
@@ -46,33 +44,33 @@ component.config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlR
     .state(`layout.other`, {
       url: '/other',
       views: {
-        "content": {
-          template: "other"
+        'content': {
+          template: 'other'
         },
-        "navigation": {
-          template: "<a ui-sref='layout.smart'>Link</a><a ui-sref='layout.other'>Link</a>"
+        'navigation': {
+          template: `<a ui-sref='layout.home'>Link</a><a ui-sref='layout.other'>Link</a>`
         },
-        "footer": {
+        'footer': {
           template: ' | other'
         }
       }
     });
 
-  return $urlRouterProvider.otherwise('/layout-smart');
+  return $urlRouterProvider.otherwise('/home');
 }]);
 
 component.config(router(component, [
   {
-    "stateName": "layout",
-    "urlPrefix": "/layout-smart",
-    "type": "load",
-    "src": "github:milenstanev-jspm.app.layout.smart@0.0.4"
+    'stateName': 'layoutSmart',
+    'urlPrefix': '/',
+    'type': 'load',
+    'src': 'milenstanev/jspm.app.layout.smart'
   },
   {
-    "stateName": "layout.other",
-    "urlPrefix": "/other",
-    "type": "load",
-    "src": "github:milenstanev-jspm.app.layout.smart@0.0.4"
+    'stateName': 'layoutSmart.other',
+    'urlPrefix': '/',
+    'type': 'load',
+    'src': 'milenstanev/jspm.app.layout.smart'
   }
 ]));
 

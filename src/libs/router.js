@@ -17,7 +17,8 @@ export default function(angularModule, futureRoutes) {
 						var newModule = loaded;
 						if (!loaded.name) {
 							/**
-							 * @desc They are an issue in original file, missing {window} and Object can't be acessed in component closure!
+							 * @desc They are an issue in original file, missing {window} and Object can't be accessed in component closure!
+               *  - mstanev fix!
 							 */
 							var key = window.Object.keys(loaded);
 							newModule = loaded[key[0]];

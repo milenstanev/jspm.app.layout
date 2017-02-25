@@ -13,7 +13,7 @@ System.config({
   },
 
   map: {
-    "angular": "github:angular/bower-angular@1.6.1",
+    "angular": "github:angular/bower-angular@1.6.2",
     "angular-ui/ui-router": "github:angular-ui/ui-router@0.4.2",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
@@ -23,8 +23,8 @@ System.config({
     "distros/bootstrap-less": "github:distros/bootstrap-less@3.3.9",
     "json": "github:systemjs/plugin-json@0.2.3",
     "less": "github:systemjs/plugin-less@0.1.2",
-    "milenstanev-jspm.app.layout.smart": "github:milenstanev-jspm.app.layout.smart@0.0.5",
-    "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@1.0.9",
+    "milenstanev/jspm.app.layout.smart": "github:milenstanev/jspm.app.layout.smart@master",
+    "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@1.1.0",
     "text": "github:systemjs/plugin-text@0.0.9",
     "github:distros/bootstrap-less@3.3.9": {
       "jquery": "github:components/jquery@3.1.1"
@@ -47,15 +47,15 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "github:milenstanev-jspm.app.layout.smart@0.0.5": {
-      "angular": "github:angular/bower-angular@1.6.1",
+    "github:milenstanev/jspm.app.layout.smart@master": {
+      "angular": "github:angular/bower-angular@1.6.2",
       "angular-ui/ui-router": "github:angular-ui/ui-router@0.4.2",
       "christopherthielen/ui-router-extras": "github:christopherthielen/ui-router-extras@0.1.3",
       "css": "github:systemjs/plugin-css@0.1.32",
       "distros/bootstrap-less": "github:distros/bootstrap-less@3.3.9",
       "json": "github:systemjs/plugin-json@0.2.3",
       "less": "github:systemjs/plugin-less@0.1.2",
-      "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@1.0.9",
+      "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@1.1.0",
       "text": "github:systemjs/plugin-text@0.0.9"
     },
     "github:systemjs/plugin-less@0.1.2": {
