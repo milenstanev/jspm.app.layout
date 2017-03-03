@@ -25,6 +25,7 @@
       "css": "systemjs/plugin-css@^0.1.32",
       "distros/bootstrap-less": "^3.3.9",
       "json": "systemjs/plugin-json@^0.2.3",
+      "jspm.app.util": "msc:jspm.app.util@master",
       "less": "systemjs/plugin-less@^0.1.2",
       "ocombe/ocLazyLoad": "^1.0.9",
       "text": "systemjs/plugin-text@^0.0.9"
@@ -36,6 +37,9 @@
     }
   },
   "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "jspm-git": "^0.6.0",
     "less": "^2.7.2",
     "systemjs-builder": "^0.16.0"
   }

@@ -9,7 +9,8 @@ System.config({
   },
   paths: {
     "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "npm:*": "jspm_packages/npm/*",
+    "msc:*": "jspm_packages/msc/*"
   },
 
   map: {
@@ -22,10 +23,12 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.32",
     "distros/bootstrap-less": "github:distros/bootstrap-less@3.3.9",
     "json": "github:systemjs/plugin-json@0.2.3",
+    "jspm.app.util": "msc:jspm.app.util@master",
     "less": "github:systemjs/plugin-less@0.1.2",
     "milenstanev-jspm.app.layout.smart": "github:milenstanev-jspm.app.layout.smart@0.0.2",
     "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@1.1.0",
     "text": "github:systemjs/plugin-text@0.0.9",
+    "util": "msc:util@0.0.1",
     "github:distros/bootstrap-less@3.3.9": {
       "jquery": "github:components/jquery@3.1.1"
     },
