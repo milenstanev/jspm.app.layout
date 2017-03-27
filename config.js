@@ -50,7 +50,11 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
+<<<<<<< Updated upstream
     "github:milenstanev-jspm.app.layout.smart@0.0.2": {
+=======
+    "github:milenstanev/jspm.app.layout.smart@master": {
+>>>>>>> Stashed changes
       "FortAwesome/Font-Awesome": "github:FortAwesome/Font-Awesome@4.7.0",
       "angular": "github:angular/bower-angular@1.6.2",
       "angular-ui/ui-router": "github:angular-ui/ui-router@0.4.2",
