@@ -5,8 +5,7 @@
   "registry": "github",
   "main": "dist/index.dist.js",
   "scripts": {
-    "start": "npm install && npm run postinstall && npm run server",
-    "server": "python -m SimpleHTTPServer 3000",
+    "start": "npm install && jspm update && python -m SimpleHTTPServer 3000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/.bin/jspm install -y",
     "jspm-link": "./node_modules/.bin/jspm link -y",

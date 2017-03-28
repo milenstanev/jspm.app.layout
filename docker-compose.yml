@@ -1,7 +1,7 @@
-web:
-  ## restart: always
+jspm.app.layout:
+  ##restart: always
   build: .
-  container_name: jspm.app.layout
+  container_name: node
   command: npm start
   ports:
    - "3000:3000"
