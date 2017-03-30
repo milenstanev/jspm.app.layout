@@ -21,7 +21,7 @@
   },
   "jspm": {
     "dependencies": {
-      "angular": "angular/bower-angular@^1.6.1"
+      "angular": "angular/bower-angular@^1.6.3"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

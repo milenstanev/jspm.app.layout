@@ -19,16 +19,10 @@
 
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
-
 <script>
-  System.import('angular').then(function () {
-    System.import('./index').then(function (reference) {
-      angular.bootstrap(document.body, [
-        reference.default.name
-      ]);
-      
-    });
-  });
+  // ssh: docker exec -it node bash
+  System.import('./index');
 </script>
+
 </body>
 </html>

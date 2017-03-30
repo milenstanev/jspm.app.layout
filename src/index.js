@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 const app = angular.module('app', []);
 
 class AppCtrl {
@@ -16,4 +18,6 @@ app.component('app', {
   }
 });
 
-export default app;
+angular.bootstrap(document.body, [app.name]);
+
+// if it's component, this is main! | export default app;
