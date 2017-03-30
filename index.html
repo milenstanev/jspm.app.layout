@@ -12,7 +12,10 @@
 
 <body ng-cloak>
 
-<div ui-view="layout"></div>
+<app
+  component-title="'Some Title'"
+  component-content="'Content ...'">
+</app>
 
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
@@ -20,10 +23,10 @@
 <script>
   System.import('angular').then(function () {
     System.import('./index').then(function (reference) {
-    //System.import('./dist/index.dist').then(function (reference) {
       angular.bootstrap(document.body, [
         reference.default.name
       ]);
+      
     });
   });
 </script>

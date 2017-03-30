@@ -1,5 +1,4 @@
 jspm.app.layout:
-  ##restart: always
   build: .
   container_name: node
   command: npm start

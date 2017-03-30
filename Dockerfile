@@ -1,5 +1,5 @@
 FROM node:latest
 COPY . /usr/local/app
 WORKDIR /usr/local/app
-###RUN npm install
+RUN npm i jspm -g
 CMD ["npm", "start"]
